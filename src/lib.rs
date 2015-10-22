@@ -1,13 +1,11 @@
 extern crate rand;
 
-use rand::random;
+use rand::{Rng, thread_rng};
 
 macro_rules! choose {
     ( $x:expr ) => {
         {
-            let length = $x.len() as f32;
-            let idx = rand::random::<f32>() * length;
-            $x[idx.floor() as usize]
+            *thread_rng().choose(&$x).unwrap()
         }
     };
 }
