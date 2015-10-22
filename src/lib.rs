@@ -161,3 +161,15 @@ fn test_angry() {
     println!("{}", f);
     assert!(ANGRY_FACES.contains(&f));
 }
+
+#[test]
+fn test_face() {
+    let f = face();
+    assert!(ANGRY_FACES.contains(&f) ||
+            CONFUSED_FACES.contains(&f) ||
+            DISAPPOINTED_FACES.contains(&f) ||
+            EXCITED_FACES.contains(&f) ||
+            HAPPY_FACES.contains(&f) ||
+            MEH_FACES.contains(&f) ||
+            SAD_FACES.contains(&f));
+}
