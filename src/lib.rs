@@ -12,7 +12,7 @@ macro_rules! choose {
     };
 }
 
-pub fn angry() -> String {
+pub fn angry() -> &'static str {
     let faces = [
       "(╯°□°）╯︵ ┻━┻",
       "┻━┻︵ \\(°□°)/ ︵ ┻━┻",
@@ -34,13 +34,12 @@ pub fn angry() -> String {
       "(۶ૈ ۜ ᵒ̌▱๋ᵒ̌ )۶ૈ=͟͟͞͞ ⌨",
       "꒰✘Д✘◍꒱",
       "( `·´ )",
-
     ];
 
-    choose!(faces).to_string()
+    choose!(faces)
 }
 
-pub fn confused() -> String {
+pub fn confused() -> &'static str {
     let faces = [
         "( '-')",
         "⊙﹏⊙",
@@ -51,20 +50,20 @@ pub fn confused() -> String {
         "ʅʕ•ᴥ•ʔʃ",
     ];
 
-    choose!(faces).to_string()
+    choose!(faces)
 }
 
 
-pub fn disappointed() -> String {
+pub fn disappointed() -> &'static str {
     let faces = [
         "¬_¬",
         "( ︶︿︶)",
         "(；一_一)",
     ];
-    choose!(faces).to_string()
+    choose!(faces)
 }
 
-pub fn excited() -> String {
+pub fn excited() -> &'static str {
     let faces = [
         "☜(⌒▽⌒)☞",
         "ヽ༼ຈل͜ຈ༽ﾉ",
@@ -82,10 +81,10 @@ pub fn excited() -> String {
         "ヾ(⌐■_■)ノ",
     ];
 
-    choose!(faces).to_string()
+    choose!(faces)
 }
 
-pub fn happy() -> String {
+pub fn happy() -> &'static str {
     let faces = [
       "( ͜。 ͡ʖ ͜。)",
       "~(‾▿‾)~",
@@ -112,34 +111,34 @@ pub fn happy() -> String {
       "° ͜ʖ ͡°",
     ];
 
-    choose!(faces).to_string()
+    choose!(faces)
 }
 
-pub fn meh() -> String {
+pub fn meh() -> &'static str {
     let faces = [
         "¯\\_(ツ)_/¯",
         "( ͡° ͜ʖ ͡°)",
         "(-.-)",
     ];
 
-    choose!(faces).to_string()
+    choose!(faces)
 }
 
-pub fn sad() -> String {
+pub fn sad() -> &'static str {
     let faces = [
         "(¡~¡)",
         "( ⚆ _ ⚆ )",
         "༼;´༎ຶ ۝ ༎ຶ༽",
         "༼ ºل͟º ༽",
         "ಠ╭╮ಠ",
-        ":("
+        ":(",
     ];
 
-    choose!(faces).to_string()
+    choose!(faces)
 }
 
-pub fn deal_with_it() -> String {
-    "(⌐■_■)".to_string()
+pub fn deal_with_it() -> &'static str {
+    "(⌐■_■)"
 }
 
 // TODO: figure out how to build a
@@ -158,5 +157,5 @@ pub fn deal_with_it() -> String {
 fn test_angry() {
     let face = angry();
     println!("{}", face);
-    assert_eq!(face, "(╯°□°）╯︵ ┻━┻".to_string());
+    assert_eq!(face, "(╯°□°）╯︵ ┻━┻");
 }
