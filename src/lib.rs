@@ -37,7 +37,7 @@ pub fn angry() -> String {
 
     ];
 
-    choose!(faces).to_string()
+    choose!(faces).to_owned()
 }
 
 pub fn confused() -> String {
@@ -51,7 +51,7 @@ pub fn confused() -> String {
         "ʅʕ•ᴥ•ʔʃ",
     ];
 
-    choose!(faces).to_string()
+    choose!(faces).to_owned()
 }
 
 
@@ -61,7 +61,7 @@ pub fn disappointed() -> String {
         "( ︶︿︶)",
         "(；一_一)",
     ];
-    choose!(faces).to_string()
+    choose!(faces).to_owned()
 }
 
 pub fn excited() -> String {
@@ -82,7 +82,7 @@ pub fn excited() -> String {
         "ヾ(⌐■_■)ノ",
     ];
 
-    choose!(faces).to_string()
+    choose!(faces).to_owned()
 }
 
 pub fn happy() -> String {
@@ -112,7 +112,7 @@ pub fn happy() -> String {
       "° ͜ʖ ͡°",
     ];
 
-    choose!(faces).to_string()
+    choose!(faces).to_owned()
 }
 
 pub fn meh() -> String {
@@ -122,7 +122,7 @@ pub fn meh() -> String {
         "(-.-)",
     ];
 
-    choose!(faces).to_string()
+    choose!(faces).to_owned()
 }
 
 pub fn sad() -> String {
@@ -135,11 +135,11 @@ pub fn sad() -> String {
         ":("
     ];
 
-    choose!(faces).to_string()
+    choose!(faces).to_owned()
 }
 
 pub fn deal_with_it() -> String {
-    "(⌐■_■)".to_string()
+    "(⌐■_■)".to_owned()
 }
 
 // TODO: figure out how to build a
@@ -158,5 +158,5 @@ pub fn deal_with_it() -> String {
 fn test_angry() {
     let face = angry();
     println!("{}", face);
-    assert_eq!(face, "(╯°□°）╯︵ ┻━┻".to_string());
+    assert_eq!(face, "(╯°□°）╯︵ ┻━┻".to_owned());
 }
