@@ -1,7 +1,12 @@
 [package]
 name = "cool_faces"
-version = "0.1.0"
+version = "0.1.2"
 authors = ["Tim McNamara <code@timmcnamara.co.nz>"]
+description = "Generates cool faces for your project.\n\n( ͡° ͜ʖ ͡°)"
+repository = "https://github.com/timClicks/cool_faces"
+readme = "README"
+keywords = ["text", "easy", "fun"]
+license = "BSD-2-Clause"
 
 [dependencies]
 rand = "0.3"
