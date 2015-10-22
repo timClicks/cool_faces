@@ -1,0 +1,33 @@
+faces
+=====
+
+about
+-----
+
+=> generate cool ASCII slash Unicode faces <=
+
+( ͡° ͜ʖ ͡°)
+
+This crate is derived from [`cool-ascii-faces`](https://www.npmjs.com/package/cool-ascii-faces)
+from Max Odgen and contributors.
+
+`faces` has a few extra features. You can ask for happy, angry, sad or meh faces
+with the appropriate functions:
+
+usage
+-----
+
+    cool_faces::angry() -> "(ಠ_ಠ)" | "(╯°□°）╯︵ ┻━┻" | ...
+    cool_faces::confused() -> "٩◔̯◔۶" | ...
+    cool_faces::disappointed() -> "¬_¬" | ...
+    cool_faces::excited() -> "ᕕ( ᐛ )ᕗ" | ...
+    cool_faces::happy() -> "=^.^=" | ...
+    cool_faces::meh() -> "¯\\_(ツ)_/¯" | ...
+    cool_faces::sad() -> "༼ ºل͟º ༽" | ...
+    cool_faces::deal_with_it() -> "(⌐■_■)"
+
+
+license
+-------
+
+Copyright Tim McNamara, released under the BSD 2 clause license.
