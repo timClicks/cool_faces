@@ -141,21 +141,23 @@ pub fn deal_with_it() -> &'static str {
     "(⌐■_■)"
 }
 
-// TODO: figure out how to build a
-// collection of functions
+pub fn face() -> &'static str {
+    let fns: Vec<fn() -> &'static str> = vec![
+        angry,
+        confused,
+        disappointed,
+        excited,
+        happy,
+        meh,
+        sad,
+    ];
 
-// pub fn face() -> String {
-//     let fns = vec![
-//         happy,
-//         sad
-//     ];
-//
-//     choose!(fns)()
-// }
+    choose!(fns)()
+}
 
 #[test]
 fn test_angry() {
-    let face = angry();
-    println!("{}", face);
-    assert!(ANGRY_FACES.contains(&face));
+    let f = angry();
+    println!("{}", f);
+    assert!(ANGRY_FACES.contains(&f));
 }
