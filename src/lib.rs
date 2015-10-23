@@ -145,14 +145,14 @@ pub fn deal_with_it() -> String {
 // TODO: figure out how to build a
 // collection of functions
 
-// pub fn face() -> String {
-//     let fns = vec![
-//         happy,
-//         sad
-//     ];
-//
-//     choose!(fns)()
-// }
+pub fn face() -> String {
+    let fns: Vec<fn() -> String> = vec![
+        happy,
+        sad
+    ];
+
+    choose!(fns)()
+}
 
 #[test]
 fn test_angry() {
