@@ -8,26 +8,40 @@ about
 
 ( ͡° ͜ʖ ͡°)
 
-This crate is derived from [`cool-ascii-faces`](https://www.npmjs.com/package/cool-ascii-faces)
-from Max Odgen and contributors.
-
-`faces` has a few extra features. You can ask for happy, angry, sad or meh faces
-with the appropriate functions:
+This crate is derived from the cool-ascii-faces package[0] from Max Odgen 
+and friends.
 
 usage
 -----
 
-    cool_faces::angry() -> "(ಠ_ಠ)" | "(╯°□°）╯︵ ┻━┻" | ...
-    cool_faces::confused() -> "٩◔̯◔۶" | ...
-    cool_faces::disappointed() -> "¬_¬" | ...
-    cool_faces::excited() -> "ᕕ( ᐛ )ᕗ" | ...
-    cool_faces::happy() -> "=^.^=" | ...
-    cool_faces::meh() -> "¯\\_(ツ)_/¯" | ...
-    cool_faces::sad() -> "༼ ºل͟º ༽" | ...
+To return any random face, just call `face`. This replicates the original
+package's API, e.g.
+
+    cool_faces::face()
+
+You can do better though! If you want to express a specific emotion, there
+are plenty to choose from. You'll receive a single face from a fairly long
+list of random options.
+
+    cool_faces::angry()        -> "(ಠ_ಠ)", "(╯°□°）╯︵ ┻━┻", ...
+    cool_faces::confused()     -> "٩◔̯◔۶",  ...
+    cool_faces::disappointed() -> "¬_¬", ...
+    cool_faces::excited()      -> "ᕕ( ᐛ )ᕗ" ,  ..
+    cool_faces::happy()        -> "=^.^=", ...
+    cool_faces::meh()          -> "¯\\_(ツ)_/¯" , ...
+    cool_faces::sad()          -> "༼ ºل͟º ༽", ...
     cool_faces::deal_with_it() -> "(⌐■_■)"
+
 
 
 license
 -------
 
-Copyright Tim McNamara, released under the BSD 2 clause license.
+Copyright Tim McNamara, released under the BSD 2 clause license[1].
+
+
+references
+----------
+
+ [0]: https://www.npmjs.com/package/cool-ascii-faces
+ [1]: https://opensource.org/licenses/BSD-2-Clause
