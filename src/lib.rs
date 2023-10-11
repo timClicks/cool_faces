@@ -114,6 +114,7 @@ pub fn happy() -> &'static str {
 
 const MEH_FACES: &'static [&'static str] = &[
     "¯\\_(ツ)_/¯",
+    "¯\\_(ツ)_/¯",
     "( ͡° ͜ʖ ͡°)",
     "(-.-)",
 ];
